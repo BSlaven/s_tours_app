@@ -1,0 +1,53 @@
+.card {
+  background: rgb(238, 243, 247);
+  color: #222;
+  width: 100%;
+  max-width: 30rem;
+  height: 20rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
+}
+
+.imgContainer {
+  height: 50%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardBody {
+  height: 40%;
+  padding: 1rem;
+  line-height: 1.6;
+  text-align: start;
+}
+
+.cardFooter {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.deleteBtn {
+  background-color:rgb(252, 239, 239);
+  color: maroon;
+  border: none;
+  outline: 2px solid rgba(128, 0, 0, 0.479);
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.deleteBtn:is(:hover, :focus) {
+  background-color: maroon;
+  color: #fff;
+}
