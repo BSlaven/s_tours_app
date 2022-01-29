@@ -10,7 +10,7 @@ const Tour = () => {
           alt="a corporate building" />
       </div>
       <div className={classes.cardBody}>
-        This is card body
+        This is card body. This is card body. This is card body. This is card body. This is card body. This is card body. This is card body. This is card body. This is card body. 
       </div>
       <div className={classes.cardFooter}>
         This is a card footer

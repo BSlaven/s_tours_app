@@ -1,5 +1,5 @@
 .card {
-  background: #eee;
+  background: rgb(238, 243, 247);
   color: #222;
   width: 100%;
   max-width: 30rem;
@@ -24,5 +24,14 @@
 
 .cardBody {
   height: 40%;
-  padding: 1rem 0;
+  padding: 1rem;
+  line-height: 1.6;
+  text-align: start;
+}
+
+.cardFooter {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
