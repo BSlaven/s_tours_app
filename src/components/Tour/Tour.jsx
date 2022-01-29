@@ -13,7 +13,7 @@ const Tour = () => {
         This is card body. This is card body. This is card body. This is card body. This is card body. This is card body. This is card body. This is card body. This is card body. 
       </div>
       <div className={classes.cardFooter}>
-        This is a card footer
+        <button className={classes.deleteBtn}>not interested</button>
       </div>
     </div>
   );

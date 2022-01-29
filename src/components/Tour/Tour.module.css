@@ -32,6 +32,22 @@
 .cardFooter {
   padding: 0.5rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+}
+
+.deleteBtn {
+  background-color:rgb(252, 239, 239);
+  color: maroon;
+  border: none;
+  outline: 2px solid rgba(128, 0, 0, 0.479);
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.deleteBtn:is(:hover, :focus) {
+  background-color: maroon;
+  color: #fff;
 }
