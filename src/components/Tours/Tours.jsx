@@ -2,22 +2,23 @@ import { useState, useEffect } from 'react'
 
 import Tour from '../Tour/Tour';
 
-const [ tours, setTours ] = useState({})
-
-useEffect(() => {
-  
-}, [])
-
-const fetchTours = async () => {
-  const res = await fetch('');
-  const tours = await res.jsosn();
-  setTours(tours);
-}
-
 const Tours = () => {
+
+  const [ tours, setTours ] = useState({})
+
+  useEffect(() => {
+    fetchTours();
+  }, [])
+
+  const fetchTours = async () => {
+    const res = await fetch('https://course-api.com/react-tours-project');
+    const tours = await res.json();
+    setTours(tours);
+  }
+  
   return (
     <div>
-      <Tour />
+      {tours && tours.map(tour => <Tour key={tour.id} tour={tour} />)}
     </div>
   );
 };

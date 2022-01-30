@@ -1,16 +1,16 @@
 import classes from './Tour.module.css';
 
-const Tour = () => {
+const Tour = ({ tour }) => {
   return (
     <div className={classes.card}>
       <div className={classes.imgContainer}>
         <img
           className={classes.image}
-          src="src/assets/building.jpg"
-          alt="a corporate building" />
+          src={tour.image}
+          alt={tour.name} />
       </div>
       <div className={classes.cardBody}>
-        This is card body. This is card body. This is card body. This is card body. This is card body. This is card body. This is card body. This is card body. This is card body. 
+        {tour.info}
       </div>
       <div className={classes.cardFooter}>
         <button className={classes.deleteBtn}>not interested</button>
