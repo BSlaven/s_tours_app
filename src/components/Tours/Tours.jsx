@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 
 import Tour from '../Tour/Tour';
+import classes from './Tours.module.css'
 
 const Tours = () => {
 
@@ -17,7 +18,7 @@ const Tours = () => {
   }
   
   return (
-    <div>
+    <div className={classes.tours}>
       {tours && tours.map(tour => <Tour key={tour.id} tour={tour} />)}
     </div>
   );
