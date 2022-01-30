@@ -9,7 +9,9 @@ const Tour = ({ tour }) => {
           src={tour.image}
           alt={tour.name} />
       </div>
-      <div className={classes.cardHeader}></div>
+      <div className={classes.cardHeader}>
+
+      </div>
       <div className={classes.cardBody}>
         {tour.info}
       </div>

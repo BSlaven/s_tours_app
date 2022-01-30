@@ -4,7 +4,7 @@ import Tour from '../Tour/Tour';
 
 const Tours = () => {
 
-  const [ tours, setTours ] = useState({})
+  const [ tours, setTours ] = useState([])
 
   useEffect(() => {
     fetchTours();
