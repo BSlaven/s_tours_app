@@ -31,7 +31,7 @@
 }
 
 .tourName {
-  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .tourPrice {
@@ -51,6 +51,16 @@
   cursor: pointer;
   position: relative;
   left: 70%;
+}
+
+.moreLess {
+  color: rgb(0, 0, 161);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.moreLess:is(:hover, :focus) {
+  color: rgb(0, 0, 83);
 }
 
 .deleteBtn:is(:hover, :focus) {
