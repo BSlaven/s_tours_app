@@ -1,8 +1,9 @@
 import { useState } from 'react';
 
 import classes from './Tour.module.css';
+import DeleteBtn from '../DeleteBtn/DeleteBtn';
 
-const Tour = ({ tour }) => {
+const Tour = ({ tour, remove }) => {
 
   const [ showMore, setShowMore ] = useState(false);
 
@@ -30,7 +31,7 @@ const Tour = ({ tour }) => {
           <span className={classes.tourPrice}>{tour.price}</span>
         </div>
         <p>{displayInfo} {moreOrLess}</p>
-        <button className={classes.deleteBtn}>not interested</button>
+        <DeleteBtn click={remove} tourId={tour.id} />
       </div>
     </div>
   );

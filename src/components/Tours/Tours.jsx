@@ -16,10 +16,16 @@ const Tours = () => {
     const tours = await res.json();
     setTours(tours);
   }
+
+  const removeTour = id => {
+    const newTours = [ ...tours ];
+    const filteredTours = newTours.filter(tour => tour.id !== id);
+    setTours(filteredTours);
+  }
   
   return (
     <div className={classes.tours}>
-      {tours && tours.map(tour => <Tour key={tour.id} tour={tour} />)}
+      {tours && tours.map(tour => <Tour key={tour.id} remove={removeTour} tour={tour} />)}
     </div>
   );
 };
