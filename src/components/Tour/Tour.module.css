@@ -38,21 +38,6 @@
   color: rgb(1, 117, 1);
 }
 
-.deleteBtn {
-  display: block;
-  background-color:rgb(252, 239, 239);
-  color: maroon;
-  border: none;
-  outline: 2px solid rgba(128, 0, 0, 0.479);
-  border-radius: 3px;
-  font-size: 1rem;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  position: relative;
-  left: 70%;
-}
-
 .moreLess {
   color: rgb(0, 0, 161);
   cursor: pointer;
@@ -61,9 +46,4 @@
 
 .moreLess:is(:hover, :focus) {
   color: rgb(0, 0, 83);
-}
-
-.deleteBtn:is(:hover, :focus) {
-  background-color: maroon;
-  color: #fff;
 }
