@@ -33,6 +33,7 @@ const Tours = () => {
   
   return (
     <div className={classes.tours}>
+      {!showLoading && tours.length < 1 ? <p>No tours to display</p> : null}
       {showLoading && <Loading />}
       {tours && tours.map(tour => <Tour key={tour.id} remove={removeTour} tour={tour} />)}
     </div>
